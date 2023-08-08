@@ -186,7 +186,7 @@ class TestDepositCalculation(unittest.TestCase):
 
         assert response.status_code == status.HTTP_400_BAD_REQUEST
         assert "error" in response.json()
-    
+
     def test_error_in_periods_type_returns_exception(self):
         response = self.client.post('/deposit', json={
                 "date": '31.01.2021',
@@ -209,7 +209,7 @@ class TestDepositCalculation(unittest.TestCase):
         assert response.status_code == status.HTTP_400_BAD_REQUEST
         assert "error" in response.json()
     
-    def test_error_in_amount_type_returns_exception(self):
+    def test_error_in_rate_type_returns_exception(self):
         response = self.client.post('/deposit', json={
                 "date": '31.01.2021',
                 "periods": 5,
