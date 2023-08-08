@@ -38,8 +38,3 @@ POST http://localhost:5000/deposit
     "30.09.2021": 10459.14
 }
 ```
-
-### Тестирование сервиса
-```
-  python3 -m pytest tests/test_app.py
-```
