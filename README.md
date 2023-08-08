@@ -1,9 +1,15 @@
 # Задание: Создать сервис REST API для расчета дипозита
 
-### Запуск docker-compose
+### Запуск docker compose
 ```
   docker compose up --build
 ```
+
+### Отстановка docker compose
+```
+  docker compose down
+```
+
 ### Использование сервиса
 
 POST http://localhost:5000/deposit
